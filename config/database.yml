@@ -1,0 +1,16 @@
+development: &development
+  adapter: postgresql
+  encoding: unicode
+  database: test_app_development
+  host: localhost
+  pool: 5
+  username: docker
+  password: docker
+  port: 5432
+
+test:
+  <<: *development
+  host: postgres
+  username: postgres
+  database: test_app_test
+  port: 5432
