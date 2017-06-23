@@ -7,7 +7,14 @@ development: &development
   username: docker
   password: docker
   port: 5432
-
+production:
+ adapter: postgresql
+ encoding: unicode
+ database: test_app_production
+ host: localhost
+ username: docker
+ password: docker
+ port:5432
 test:
   <<: *development
   host: postgres
