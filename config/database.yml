@@ -14,7 +14,7 @@ production:
  host: localhost
  username: docker
  password: docker
- port:5432
+ port: 5432
 test:
   <<: *development
   host: postgres
