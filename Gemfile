@@ -9,7 +9,7 @@ gem 'rails', '~> 5.0.2'
 gem 'pg', '~> 0.19'
 gem 'puma', '~> 3.0'
 
-
+gem 'listener', '~>3.0.5'
 gem 'hamlit', '~> 2.8'
 gem 'simple_form'
 
@@ -33,6 +33,6 @@ group :development, :test do
 end
 
 group :development do
-  gem 'listen', '~> 3.0.5'
+#  gem 'listen', '~> 3.0.5'
   gem 'letter_opener'
 end
